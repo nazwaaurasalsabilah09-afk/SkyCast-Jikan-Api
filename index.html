@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyCast | Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌤 SkyCast</h1>
+            <p class="subtitle">Cari informasi cuaca di seluruh dunia</p>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Masukkan nama kota...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <!-- Weather -->
+            <div id="weather" class="weather-content">
+
+                <h2 id="cityName">-</h2>
+
+                <div class="weather-icon">
+                    ☀️
+                </div>
+
+                <div class="temperature" id="temperature">
+                    --°C
+                </div>
+
+                <div class="description" id="description">
+                    Menunggu pencarian...
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+    <i class="fa-solid fa-cloud-showers-heavy"></i>
+    <span>Peluang Hujan</span>
+    <h3 id="rainChance">--%</h3>
+</div>
+
+                    <div class="info-box">
+    <i class="fa-solid fa-cloud-rain"></i>
+    <span>Curah Hujan</span>
+    <h3 id="rain">-- mm</h3>
+</div>
+
+<div class="info-box">
+    <i class="fa-solid fa-clock"></i>
+    <span>Waktu Lokal</span>
+    <h3 id="localTime">--</h3>
+</div>
+
+<div class="info-box">
+    <i class="fa-solid fa-calendar-days"></i>
+    <span>Tanggal</span>
+    <h3 id="localDate">--</h3>
+</div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>Kelembapan</span>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>Angin</span>
+                        <h3 id="wind">-- km/h</h3>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <span>Terasa</span>
+                        <h3 id="feelsLike">--°C</h3>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Koordinat</span>
+                        <h3 id="coordinate">-</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
